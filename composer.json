@@ -1,0 +1,15 @@
+{
+    "name": "matrix-platform/swagger",
+    "authors": [
+        {
+            "name": "jrealm",
+            "email": "jrealm@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "doctrine/annotations": "^2.0",
+        "swagger-api/swagger-ui": "^5.15",
+        "zircote/swagger-php": "^4.8"
+    }
+}
