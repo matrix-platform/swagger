@@ -15,10 +15,11 @@ return new class() extends matrix\web\Controller {
             'analyser' => new TokenAnalyser(),
         ];
 
-        $result = json_decode(Generator::scan($paths, $options)->toJson(), true);
-        $result['success'] = true;
-
-        return $result;
+        return [
+            'success' => true,
+            'view' => 'swagger.json.php',
+            'data' => json_decode(Generator::scan($paths, $options)->toJson(), true),
+        ];
     }
 
 };
